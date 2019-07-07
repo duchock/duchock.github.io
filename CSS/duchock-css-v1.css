@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+    background-color: slategrey;
+    font-family: monospace;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.grid{
+min-height: 100%;
+display: grid;
+grid-template-rows:80px 1fr 16px;
+grid-template-columns: 50px 1fr 50px;
+grid-template-areas: 
+"header header header"
+". content ."
+"footer footer footer";
+grid-gap: 16px;
+}
+.header{
+grid-area: header;
+width:100%;
+display:block;
+background-color: #101010;
+
+}
+.inner-header{
+width: 1000px;
+height: 100%;
+display: block;
+margin: 0 auto;
+background-color: inherit;
+}
+.logo{
+height: 100%;
+display: table;
+float: left;
+background-color: inherit;
+}
+.logo h1{
+color: white;
+height: 100%;
+display: table-cell;
+vertical-align: middle;
+font-family: monospace;
+font-size: 32px;
+font-weight: 200;
+background-color: inherit;
+}
+.navigation{
+float: right;
+height: 100%;
+color: white;
+font-family: monospace;
+background-color: inherit;
+
+}
+.navigation li{
+height: 100%;
+display: table;
+float: left;
+padding: 0px 20px;
+background-color: inherit;
+}
+.navigation li a{
+display: table-cell;
+vertical-align: middle;
+background-color: inherit;
+text-decoration: underline;
+}
+.navigation li a:link{
+    color: white;
+}
+.navigation li a:visited{
+    color: white;
+}
+.content {
+grid-area: content;
+width: 100%;
+}
+.footer {
+grid-area: footer;
+background-color: #101010;
+color: white;
+grid-row-start: 3;
+grid-row-end: 3;
+width: 100%;
+}
+
+.article-image {
+    margin-right: 20px;
+    float: left;
+}
+.gallery-section{
+    width: 100%;
+    float: left;
+    }
+.gallery{
+    width: 600px;
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+}
+.gallery img {
+width: 100%;
+}
+.gallery-desc{
+width: 580px;
+height: 80px;
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+
+}
