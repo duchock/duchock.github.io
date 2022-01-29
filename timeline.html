@@ -4,20 +4,14 @@
         <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="CSS/duchock-css-v1.css">
         <style>
-        #home-image{
-            border:10px dashed black;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
         .center-text{
             text-align: center;
             font-size: 40px;
             font-family: monospace;
         }
-        .content{
-            margin-top: auto;
-            margin-bottom: auto;
+        #timeline{
+            background: url(images/bar.png) repeat-y 50% 0;
+            min-height: 500px;
         }
         </style>
         <title>Timeline</title>
@@ -37,8 +31,43 @@
                 </ul>
             </div>
         </div>
-        <div class = "content"><img id="home-image" src="images/placeholder.png" alt="There is nothing here.">
-            <p class="center-text">Come back later.  There is nothing here.</p>
+        <div class = "content">
+            <div id="timeline">
+                <div class="time-block">
+                    <div class="time-year">
+                        <div>
+                            1989
+                        </div>
+                    </div>
+                </div>
+                <div class="time-block">
+                    <div class="time-event">
+                        <div class="event-left">
+                            <div>
+                                <h3><time datetime="1989-01-01 12:00">1989</time> I am born.</h3>
+                                This was the year I was born.  I'm fairly certain this is accurate. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="time-block">
+                     <div class="time-year">
+                        <div>
+                            1991
+                        </div>
+                    </div>
+                </div>
+                    <div class="time-block">
+                        <div class="time-event">
+                            <div class="event-right">
+                                 <div>
+                                     <h3><time datetime="1991-01-01 12:00">1991</time> First memory obtained.</h3>
+                                     Sometime, presumably during this year, I have my first memory.  I figured out how to operate the NES and played Super Mario Bros. in our living room.  I remember a TV in a pale wooden console against the far wall of the room, and a couch underneath two windows to the right.
+                                 </div>
+                             </div>
+                         </div>
+                </div>
+            </div>
         </div>
         <div class ="footer">Copyright &copy; 
             <script type="text/javascript">
