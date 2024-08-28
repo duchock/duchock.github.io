@@ -114,9 +114,37 @@ height: 80px;
 margin-left: 10px;
 margin-right: 10px;
 text-align: center;
-
 }
+
+.game-item{
+    width: 600px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.game-console{
+    width: 610px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.game-console details{
+    margin-left: 10px;
+}
+
+.game-console ol{
+    margin-left: 10px;
+}
+
+
+.game-top-item{
+    color: blue;
+    margin-left: -10px;
+}
+
+
 .map-image {
     margin: 5px;
     float: center;
 }
+
